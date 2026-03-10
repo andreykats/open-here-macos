@@ -6,10 +6,20 @@ on error
 	set finderPath to POSIX path of (path to desktop)
 end try
 
-tell application "iTerm"
-	activate
-	set newWindow to (create window with default profile)
-	tell current session of newWindow
-		write text "cd " & quoted form of finderPath
+if application "iTerm" is running then
+	tell application "iTerm"
+		create window with default profile
+		tell current session of current window
+			write text "cd " & quoted form of finderPath & " && clear"
+		end tell
+		activate
 	end tell
-end tell
+else
+	activate application "iTerm"
+	delay 1
+	tell application "iTerm"
+		tell current session of current window
+			write text "cd " & quoted form of finderPath & " && clear"
+		end tell
+	end tell
+end if
