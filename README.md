@@ -1,4 +1,4 @@
-# Open Here macOS
+# Open-Here for macOS Finder
 
 Finder toolbar buttons to open the current folder in VSCode or iTerm.
 
