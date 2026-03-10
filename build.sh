@@ -41,10 +41,10 @@ build_app() {
 }
 
 build_app "Open in VSCode" "open-in-vscode.applescript" "com.andrey.open-in-vscode" \
-    "/Applications/Visual Studio Code.app/Contents/Resources/Code.icns"
+    "$SCRIPT_DIR/icons/vscode.icns"
 
 build_app "Open in iTerm" "open-in-iterm.applescript" "com.andrey.open-in-iterm" \
-    "/Applications/iTerm.app/Contents/Resources/iTerm2 App Icon for Release.icns"
+    "$SCRIPT_DIR/icons/terminal.icns"
 
 echo ""
 echo "Done! Apps are in $DIST_DIR/"
