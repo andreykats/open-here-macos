@@ -2,6 +2,8 @@
 
 Finder toolbar buttons to open the current folder in VSCode or iTerm.
 
+![Screenshot](screenshot.png)
+
 ## Prerequisites
 
 - [Visual Studio Code](https://code.visualstudio.com/) installed in `/Applications`
